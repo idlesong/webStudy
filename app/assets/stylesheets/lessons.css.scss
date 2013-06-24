@@ -1,0 +1,37 @@
+// Place all the styles related to the Lessons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div.tablearea{
+	background: #fff;
+	padding: 50px;
+
+	table {
+		width:90%;
+		border-top:1px solid #e5eff8;
+		border-right:1px solid #e5eff8;
+		margin:1em auto;
+		border-collapse:collapse;
+	}
+
+	th{
+		background:#f4f9fe;
+		text-align:center;
+		font:bold 1.2em/2em;
+		color:#66a3d3;
+		border-bottom: 1px solid #e5eff8;
+		border-left: 1px solid #e5eff8;
+		padding:.7em 1em;
+	}
+
+	tr.list_line_odd td{
+		background:#f7fbff;
+	}
+
+	td{
+		color:#678197;
+		border-bottom:1px solid #e5eff8;
+		border-left:1px solid #e5eff8;
+		padding: .3em 1em;
+		text-align: center;
+	}
+}

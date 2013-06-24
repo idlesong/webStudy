@@ -1,0 +1,29 @@
+<h1>Listing lessons</h1>
+<div class="tablearea">
+<table>
+  <tr class='list_line_odd'>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Image url</th>
+    <th>Level</th>
+    <th>More1</th>
+    <th>More2</th>
+    <th>More3</th>
+  </tr>
+
+<% @lessons.each do |lesson| %>
+  <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    <td><%= lesson.title %></td>
+    <td><%= lesson.description %></td>
+    <td><%= image_tag(lesson.image_url) %></td>
+    <td><%= lesson.level %></td>
+    <td><%= link_to 'Show', lesson %></td>
+    <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
+    <td><%= link_to 'Destroy', lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+</div>
+
+
