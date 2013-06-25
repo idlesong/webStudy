@@ -1,4 +1,6 @@
 WebStudy::Application.routes.draw do
+  get "navigationbar/index"
+
   resources :lessons
 
 

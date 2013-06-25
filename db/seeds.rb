@@ -10,16 +10,62 @@ Lesson.delete_all
 #Lesson seeds
 Lesson.create(:title => 'Google Now Style Card',
 	:description => %{<p>Google Now style card</p>},
-	:image_url => 'rails.png',
+	:image_url => 'icon-check.gif',
 	:level => 4
 	)
 
 Lesson.create(:title => 'CSS table blue style',
 	:description => %{<p>Google Now style card</p>},
-	:image_url => './images/icon-check.gif',
+	:image_url => 'icon-check.gif',
 	:level => 4
 	)
 
+Lesson.create(:title => 'Google Now Style Card3',
+	:description => %{<p>Google Now style card</p>},
+	:image_url => 'icon-check.gif',
+	:level => 4
+	)
+
+Lesson.create(:title => 'Google Now Style Card4',
+	:description => %{<p>Google Now style card</p>},
+	:image_url => 'icon-check.gif',
+	:level => 4
+	)
+
+Lesson.create(:title => 'Google Now Style Card5',
+	:description => %{<p>Google Now style card</p>},
+	:image_url => 'icon-check.gif',
+	:level => 4
+	)
+
+Lesson.create(:title => 'Google Now Style Card6',
+	:description => %{<p>Google Now style card</p>},
+	:image_url => 'icon-check.gif',
+	:level => 4
+	)
+Lesson.create(:title => 'Google Now Style Card3',
+	:description => %{<p>Google Now style card</p>},
+	:image_url => 'icon-check.gif',
+	:level => 4
+	)
+
+Lesson.create(:title => 'Google Now Style Card4',
+	:description => %{<p>Google Now style card</p>},
+	:image_url => 'icon-check.gif',
+	:level => 4
+	)
+
+Lesson.create(:title => 'Google Now Style Card5',
+	:description => %{<p>Google Now style card</p>},
+	:image_url => 'icon-check.gif',
+	:level => 4
+	)
+
+Lesson.create(:title => 'Google Now Style Card6',
+	:description => %{<p>Google Now style card</p>},
+	:image_url => 'icon-check.gif',
+	:level => 4
+	)
 Lesson.create(:title => 'Google Now Style Card3',
 	:description => %{<p>Google Now style card</p>},
 	:image_url => 'icon-check.gif',
