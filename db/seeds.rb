@@ -9,13 +9,13 @@ Lesson.delete_all
 
 #Lesson seeds
 Lesson.create(:title => 'Google Now Style Card',
-	:description => %{<p>Google Now style card</p>},
+	:description => %{googlenowcard/index},
 	:image_url => 'icon-check.gif',
 	:level => 4
 	)
 
-Lesson.create(:title => 'CSS table blue style',
-	:description => %{<p>Google Now style card</p>},
+Lesson.create(:title => 'Navigation bar demo',
+	:description => %{navigationbar/index},
 	:image_url => 'icon-check.gif',
 	:level => 4
 	)

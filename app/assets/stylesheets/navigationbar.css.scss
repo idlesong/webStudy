@@ -7,8 +7,10 @@ a {
 
 #nav {
 	display: inline-block;
-	margin: 0;
-	//width: 800px;
+	margin-left: 10px;
+	margin-top:10px;
+	margin-bottom: 0px;
+	width: 1240px;
 	padding: 7px 6px 0;
 	line-height: 100%;
 	border-radius: 2em;
@@ -40,7 +42,7 @@ a {
 }
 
 // ==== main level link ====
-#nav a {
+#nav a{
 	font-weight: bold;
 	color: #e7e5e5;
 	text-decoration: none;
@@ -100,8 +102,35 @@ a {
 	display: block;
 }
 
-//#nav ul li{
-//	float: none;
-//	margin: 0;
-//	padding: 0;
-//}
+#nav ul li{
+	float: none;
+	margin: 0;
+	padding: 4px  4px;
+}
+
+
+
+// ==== side bar menu use the style like nav ====
+#side {
+	//margin-left: 25px;
+	//margin-top: 0px;
+	position: absolute;
+	//background: #8b8b8b;//#ebebeb;
+	float: left;
+}
+
+//#side ul see #nav ul
+#side li{
+	list-style: none;
+	border-bottom: 1px solid #e5eff8;
+	background: #8b8b8b;
+}
+
+#side a{
+	//font-weight: bold;
+	color: #fff;//#e7e5e5;
+	text-decoration: none;
+	display: block;
+	padding: 4px  40px;
+	margin: 0;
+}

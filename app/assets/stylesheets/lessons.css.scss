@@ -2,10 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 div.tablearea{
-	background: #fff;
+	//background: #fff;
 	padding: 50px;
 
 	table {
+		background: #fff;
 		width:90%;
 		border-top:1px solid #e5eff8;
 		border-right:1px solid #e5eff8;
@@ -33,5 +34,11 @@ div.tablearea{
 		border-left:1px solid #e5eff8;
 		padding: .3em 1em;
 		text-align: center;
+	}
+
+	a{
+		color: #04bff4;
+		text-decoration: none;
+		top: 4px;
 	}
 }

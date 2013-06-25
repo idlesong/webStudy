@@ -13,11 +13,11 @@
 
 <% @lessons.each do |lesson| %>
   <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-    <td><%= lesson.title %></td>
+    <td><%= link_to lesson.title, lesson.description.to_s%></td>
     <td><%= lesson.description %></td>
     <td><%= image_tag(lesson.image_url) %></td>
     <td><%= lesson.level %></td>
-    <td><%= link_to 'Show', "googlenowcard/index" %></td>
+    <td><%= link_to 'Show', lesson.description.to_s %></td>
     <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
     <td><%= image_tag('b-order.gif') %></td>
   </tr>
