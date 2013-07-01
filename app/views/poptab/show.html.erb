@@ -1,0 +1,36 @@
+<h1>Poptab#show</h1>
+<p>Find me in app/views/poptab/show.html.erb</p>
+
+<a href="#openModal">Open Modal</a>
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close"> X </a>
+		<h3>Select Your Customer Order</h3>
+		<p> This is sample modal dialog, I want use it as database search</p>
+		<hr class="gray">
+		
+		<div class="tablearea">
+		<table>
+		  <tr class='list_line_odd'>
+		    <th>Name</th>
+		    <th>Code</th>
+		    <th>Contact</th>
+		    <th>Level</th>
+		  </tr>
+
+		<% 1.upto(5) %>
+		<% 1.upto(5) do |i| %>
+		  <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+		    <td>Name <%= i.to_s %></td>
+		    <td>Code <%= i.to_s %></td>
+		    <td>Contact <%= i.to_s %></td>
+		    <td>Level <%= i.to_s %></td>
+		  </tr>
+		<% end %>
+		</table>
+	</div>
+	</div>
+</div>
+
+
+

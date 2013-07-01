@@ -20,8 +20,8 @@ Lesson.create(:title => 'Navigation bar demo',
 	:level => 4
 	)
 
-Lesson.create(:title => 'Google Now Style Card3',
-	:description => %{<p>Google Now style card</p>},
+Lesson.create(:title => 'Pop dialogs',
+	:description => %{poptab/show},
 	:image_url => 'icon-check.gif',
 	:level => 4
 	)
