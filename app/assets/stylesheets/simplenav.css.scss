@@ -1,0 +1,72 @@
+// Place all the styles related to the Simplenav controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#menu{
+	margin: 0; padding: 0;
+	//display: block;
+	width: 100%; //100%-2px;
+	height:32px;
+	background-color: #0b75b2;//black;//#333;
+	font-weight: bold;
+	font-size: 10px;
+
+	//border: 1px solid #002232;
+
+	//margin: 10px 0px;
+	//margin:10px auto 0px auto;
+	//padding:0px 20px 0px 20px;
+}
+
+#menu ul{
+	margin: 0; padding: 0;
+	//margin: 2px 0px 0px 0px; padding: 0;
+	width :100%;
+	//hight :13px;
+	//margin: 10px 10px; 
+	//padding: 2px 0px;
+	//float: left;
+}
+
+/*
+#menu ul li{
+	margin: 0; padding: 6px;
+	float: left;
+	list-style: none;
+}
+*/
+
+#menu .nav_left{
+	margin: 0; padding: 6px;
+	float: left;
+	list-style: none;
+}
+
+#menu .nav_right{
+	margin: 0; padding: 6px;
+	float: right;
+	//margin-right: 0;
+	list-style: none;
+	//padding-right: 0;
+}
+
+
+#menu ul li a{
+	margin: 0;//0px 4px;//margin: 4px 2px; 
+	padding: 10px 8px 10px 8px;
+	//float: left; 
+	color: white;
+	text-decoration: none;
+	//text-align: center;
+
+	background-color: #0b75b2;//red;//#0b75b2;//#333;
+}
+
+#menu ul li a:hover, .menu ul li .current{
+	color: #fff;
+	background-color: #333;//#0b75b2;
+}
+
+
+
+
+

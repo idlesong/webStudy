@@ -1,4 +1,6 @@
 WebStudy::Application.routes.draw do
+  get "simplenav/show"
+
   get "poptab/show"
 
   get "navigationbar/index"
