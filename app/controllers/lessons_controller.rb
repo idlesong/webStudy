@@ -28,7 +28,7 @@ class LessonsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @lesson }
+      format.js
     end
   end
 

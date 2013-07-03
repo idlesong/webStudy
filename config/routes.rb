@@ -1,4 +1,7 @@
 WebStudy::Application.routes.draw do
+  resources :customers
+
+
   get "simplenav/show"
 
   get "poptab/show"
@@ -7,10 +10,14 @@ WebStudy::Application.routes.draw do
 
   resources :lessons
 
+  #resources :customers
+  get "customers/index"
 
   get "csstableblue/index"
 
   get "googlenowcard/index"
+
+  root :to => "lessons#index"
 
 
   # The priority is based upon order of creation:

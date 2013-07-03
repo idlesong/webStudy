@@ -1,0 +1,6 @@
+alert ("Hello");
+
+$("#customer_card").html("<%= j render "card" %>");
+<% @customer = Customer.new # reset for new form %>
+$(".edit_customer").replaceWith("<%= j render "form" %>");
+$(".new_customer")[0].reset();

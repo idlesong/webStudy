@@ -33,8 +33,8 @@ Lesson.create(:title => 'Pop dialogs',
 	)
 
 
-Lesson.create(:title => 'Google Now Style Card5',
-	:description => %{<p>Google Now style card</p>},
+Lesson.create(:title => 'Ajax CURD demo: customers',
+	:description => %{customers},
 	:image_url => 'icon-check.gif',
 	:level => 4
 	)

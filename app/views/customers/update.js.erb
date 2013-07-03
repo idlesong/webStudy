@@ -1,0 +1,4 @@
+$("#<%= dom_id @customer %>").replaceWith("<%= j render @customer %>");
+<% @customer = Customer.new # reset for new form %>
+$(".edit_customer").replaceWith("<%= j render "form" %>");
+$(".new_customer")[0].reset();

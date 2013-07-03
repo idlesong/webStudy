@@ -1,0 +1,9 @@
+  <tr>
+    <td><%= customer.name %></td>
+    <td><%= customer.adress %></td>
+    <td><%= customer.phone %></td>
+    <td><%= customer.email %></td>
+    <td><%= link_to 'Show', customer %></td>
+    <td><%= link_to 'Edit', edit_customer_path(customer), :remote => true %></td>
+    <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' }, :remote => true %></td>
+  </tr>
