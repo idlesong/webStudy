@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'rb-readline', '~> 0.4.2'
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
