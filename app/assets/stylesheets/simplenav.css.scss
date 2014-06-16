@@ -1,6 +1,13 @@
 // Place all the styles related to the Simplenav controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#container
+{
+	margin: 0 auto;
+	width: 100%;
+	background: #fff;
+}
+
 #menu{
 	margin: 0; padding: 0;
 	//display: block;
@@ -22,7 +29,7 @@
 	//margin: 2px 0px 0px 0px; padding: 0;
 	width :100%;
 	//hight :13px;
-	//margin: 10px 10px; 
+	//margin: 10px 10px;
 	//padding: 2px 0px;
 	//float: left;
 }
@@ -43,9 +50,9 @@
 
 
 #menu ul li a{
-	margin: 0;//0px 4px;//margin: 4px 2px; 
+	margin: 0;//0px 4px;//margin: 4px 2px;
 	padding: 10px 8px 10px 8px;
-	//float: left; 
+	//float: left;
 	color: white;
 	text-decoration: none;
 	//text-align: center;
@@ -58,7 +65,42 @@
 	background-color: #333;//#0b75b2;
 }
 
+#content-container
+{
+	float: left;
+	width: 100%;
+	background: #FFF url(layout-two-liquid-background.gif) repeat-y 68% 0;
+}
 
+#content
+{
+	clear: right;
+	float: right;
+	width: 80%;
+	padding: 0 0;
+	margin: 0 0 0 0;
+	display: inline;
+}
 
+#content h2 { margin: 0; }
 
+#aside
+{
+	float: left;
+	width: 15%;
+	padding: 20px 0;
+	margin: 0 3% 0 0;
+	display: inline;
+	background: #ccc;
+}
 
+#aside h3 { margin: 0; }
+
+#footer
+{
+	clear: left;
+	background: #ccc;
+	text-align: right;
+	padding: 20px;
+	height: 1%;
+}
