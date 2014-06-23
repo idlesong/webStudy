@@ -1,0 +1,30 @@
+
+<table>
+<tr>
+  <%= form_for(@customer, :remote => true) do |f| %>
+    <td>
+      <div class="td_field">
+        <%= f.text_field :name %>
+      </div>
+    </td>
+    <td>
+      <div class="td_field">
+        <%= f.text_area :adress %>
+      </div>
+    </td>
+    <td>
+      <div class="td_field">
+        <%= f.text_field :phone %>
+      </div>
+    </td>
+    <td>
+      <div class="td_field">
+        <%= f.text_field :email %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    </td>
+  <% end %>
+</tr>
+</table>

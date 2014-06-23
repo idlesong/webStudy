@@ -1,0 +1,149 @@
+<div id = "layout-container">
+  <div id = "menu">
+    <ul>
+      <li class="nav_left"><a href="#">Home    </a></li>
+      <li class="nav_left"><a href="#">Group#Sales</a></li>
+      <li class="nav_right"><a href="#">@Qinkunsong</a></li>
+      <li class="nav_right"><a href="#">Product </a></li>
+      <li class="nav_right"><a href="#">Customer</a></li>
+      <li class="nav_right"><a href="#">Supplier</a></li>
+    </ul>
+  </div>
+  <div id = "layout-content-container">
+    <div id = "layout-aside">
+      <div class="pure-menu pure-menu-open">
+          <a class="pure-menu-heading">HOME</a>
+
+          <ul>
+              <li><a href="#">Customer Order</a></li>
+              <li><a href="#">Sales Order</a></li>
+              <li><a href="#">Wiki</a></li>
+              <li><a href="#">Finance</a></li>
+              <li class="pure-menu-heading">Tools</li>
+              <li><a href="#">Prices</a></li>
+              <li><a href="#">Report</a></li>
+              <li><a href="#">OMG!</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div id = "layout-content">
+      <h1>Simplenav#show</h1>
+      <p>Find me in app/views/simplenav/show.html.erb</p>
+      <p>http://www.maxdesign.com.au/articles/css-layouts/two-liquid/</p>
+
+      <h1>Listing purecsses</h1>
+
+      <table class="pure-table pure-table-bordered">
+        <thead>
+        <tr>
+          <th>Element</th>
+          <th>show</th>
+          <th>Edit</th>
+          <th>Del</th>
+        </tr>
+      </thead>
+
+      <tbody>
+      <% @purecsses.each do |purecss| %>
+        <tr>
+          <td><%= purecss.element %></td>
+          <td><%= link_to 'Show', purecss %></td>
+          <td><%= link_to 'Edit', edit_purecss_path(purecss) %></td>
+          <td><%= link_to 'Destroy', purecss, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+      </tbody>
+      </table>
+
+      <br />
+
+      <%= link_to 'New Purecss', new_purecss_path %>
+
+      <h1>Forms</h1>
+      <form class="pure-form">
+        <fieldset>
+            <legend>A compact inline form</legend>
+
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+
+            <label for="remember">
+                <input id="remember" type="checkbox"> Remember me
+            </label>
+
+            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+        </fieldset>
+      </form>
+
+      <form class="pure-form pure-form-stacked">
+        <fieldset>
+          <legend>A Stacked Form</legend>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Email">
+
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Password">
+
+          <label for="state">State</label>
+          <select id="state">
+            <option>AL</option>
+            <option>CA</option>
+            <option>IL</option>
+          </select>
+
+          <label for="remember" class="pure-checkbox">
+              <input id="remember" type="checkbox"> Remember me
+          </label>
+
+          <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+        </fieldset>
+      </form>
+
+      <form class="pure-form pure-form-aligned">
+          <fieldset>
+              <div class="pure-control-group">
+                  <label for="name">Username</label>
+                  <input id="name" type="text" placeholder="Username">
+              </div>
+
+              <div class="pure-control-group">
+                  <label for="password">Password</label>
+                  <input id="password" type="password" placeholder="Password">
+              </div>
+
+              <div class="pure-control-group">
+                  <label for="email">Email Address</label>
+                  <input id="email" type="email" placeholder="Email Address">
+              </div>
+
+              <div class="pure-control-group">
+                  <label for="foo">Supercalifragilistic Label</label>
+                  <input id="foo" type="text" placeholder="Enter something here...">
+              </div>
+
+              <div class="pure-controls">
+                  <label for="cb" class="pure-checkbox">
+                      <input id="cb" type="checkbox"> I've read the terms and conditions
+                  </label>
+
+                  <button type="submit" class="pure-button pure-button-primary">Submit</button>
+              </div>
+          </fieldset>
+      </form>
+
+      <h1> Buttons </h1>
+      <a class="pure-button pure-button-disabled" href="#">A Disabled Button</a>
+      <button class="pure-button pure-button-disabled">A Disabled Button</button>
+
+      <a class="pure-button pure-button-active" href="#">An Active Button</a>
+      <button class="pure-button pure-button-active">An Active Button</button>
+
+      <a class="pure-button pure-button-primary" href="#">A Primary Button</a>
+      <button class="pure-button pure-button-primary">A Primary Button</button>
+
+      <h1>pages</h1>  
+
+    </div>
+</div>

@@ -1,0 +1,2 @@
+module AtablesHelper
+end

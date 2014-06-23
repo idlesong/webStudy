@@ -1,0 +1,21 @@
+<%= form_for(@purecss) do |f| %>
+  <% if @purecss.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@purecss.errors.count, "error") %> prohibited this purecss from being saved:</h2>
+
+      <ul>
+      <% @purecss.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :element %><br />
+    <%= f.text_field :element %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

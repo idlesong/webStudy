@@ -1,4 +1,9 @@
 WebStudy::Application.routes.draw do
+  resources :contacts do as_routes end
+
+  resources :purecsses
+
+
   resources :customers
 
 
@@ -16,6 +21,8 @@ WebStudy::Application.routes.draw do
   get "csstableblue/index"
 
   get "googlenowcard/index"
+
+  get "purecsses/index"
 
   root :to => "lessons#index"
 
